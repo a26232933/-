@@ -80,16 +80,56 @@ nav #box #social a:nth-child(2) {
 
 #content {
   width: 1920px;
-  height: 500px;
   background-image: url(./img/paper.png);
+  border: 0.1px solid rgba(0, 0, 0, 0);
 }
 
 #content h1 {
   text-align: center;
   margin-top: 46px;
+  margin-bottom: 60px;
   font-weight: 300;
   letter-spacing: 9.6px;
   font-size: 32px;
-  color: black;
+}
+
+#content #news {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#content #news div {
+  background-color: white;
+  padding: 40px 30px;
+}
+
+#content #news div h3 {
+  color: #49aa45;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+#content #news div h4 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 5.5px;
+  text-align: center;
+}
+
+#content #news div p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  letter-spacing: 4.8;
+  margin: 28px 0 31px;
 }
 /*# sourceMappingURL=style.css.map */
