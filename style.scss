@@ -9,6 +9,12 @@
     background-image: url(./img/banner.png);
     width: 1920px;
     height: 1280px;
+    // 格線會將子元素改為區塊元素
+    display: grid;
+    align-items: center;
+    img{
+        margin: 0 auto;
+    }
 }
 nav{
     position: fixed;
@@ -26,14 +32,40 @@ nav{
 #link{
    display: grid;
    grid-template-columns: repeat(3,1fr);
+   align-items: flex-end;
    a{
-       font-size: 18px;
-       font-weight: 100;
+        font-size: 18px;
+        font-weight: 100;
+            &:nth-child(2){
+                text-align: center;
+            }
+             &:nth-child(3){
+                text-align: right;
+             }
          }
     }
-        #social{
-         display: grid;
-         grid-template-columns: repeat(2,1fr);
-                }
+            #social{
+                     display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    align-items: flex-end;
+                    a:nth-child(2){
+                        text-align: right;
+                    }
+             }
+     }
+}
+// 內容區域
+#content{
+    width: 1920px;
+    height: 500px;
+    background-image: url(./img/paper.png);
+
+    h1{
+        text-align: center;
+        margin-top: 46px;
+        font-weight: 300;
+        letter-spacing: 9.6px;
+        font-size: 32px;
+        color: black;
     }
 }
